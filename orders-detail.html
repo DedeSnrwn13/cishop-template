@@ -12,7 +12,7 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Hugo 0.88.1" />
-    <title>Cart - CI Shop</title>
+    <title>Orders Detail - CI Shop</title>
 
     <!-- Bootstrap core CSS -->
     <link
@@ -28,7 +28,7 @@
   <body>
     <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">Fixed navbar</a>
+        <a class="navbar-brand" href="#">CIShop</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -102,10 +102,34 @@
 
     <main role="main" class="container">
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-3">
           <div class="card mb-3">
-            <div class="card-header"><h5>Cart</h5></div>
+            <div class="card-header">Menu</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="/profile.html" class="">Profile</a>
+              </li>
+              <li class="list-group-item">
+                <a href="/orders.html" class="">Orders</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <div class="card">
+            <div class="card-header">
+              Detail Order #742390
+              <div class="float-right">
+                <span class="badge badge-pill badge-info"
+                  >Menunggu Pembayaran</span
+                >
+              </div>
+            </div>
             <div class="card-body">
+              <p>Nama: Nama Peneriama</p>
+              <p>Telepon: 082317721398</p>
+              <p>Alamat: Jl. Soekarno Hatta No. 45</p>
+
               <table class="table">
                 <thead>
                   <tr>
@@ -113,7 +137,6 @@
                     <th>Harga</th>
                     <th class="text-center">Jumlah</th>
                     <th class="text-center">Subtotal</th>
-                    <th>Aksi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -124,46 +147,20 @@
                         <strong>Produck title</strong>
                       </p>
                     </td>
-                    <td>Rp. 100.000,-</td>
-                    <td>
-                      <form action="">
-                        <div class="input-group">
-                          <input
-                            type="number"
-                            class="form-control text-center"
-                            value="1"
-                          />
-                          <div class="input-group-append">
-                            <button class="btn btn-info" type="submit">
-                              <i class="fas fa-check"></i>
-                            </button>
-                          </div>
-                        </div>
-                      </form>
-                    </td>
                     <td class="text-center">Rp. 100.000,-</td>
-                    <td>
-                      <form action="">
-                        <button class="btn btn-danger">
-                          <i class="fas fa-trash"></i>
-                        </button>
-                      </form>
-                    </td>
+                    <td class="text-center">1</td>
+                    <td class="text-center">Rp. 100.000,-</td>
                   </tr>
                   <tr>
                     <td colspan="3"><strong>Total:</strong></td>
                     <td class="text-center"><strong>Rp. 100.000,-</strong></td>
-                    <td></td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <div class="card-footer">
-              <a href="/checkout.html" class="btn btn-success float-right"
-                >Checkout <i class="fas fa-angle-right"></i
-              ></a>
-              <a href="/index.html" class="btn btn-warning text-white"
-                ><i class="fas fa-angle-left"></i> Kembali belanja</a
+              <a href="/orders-confirm.html" class="btn btn-success"
+                >Konfirmasi Pembayaran</a
               >
             </div>
           </div>
