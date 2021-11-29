@@ -12,7 +12,7 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Hugo 0.88.1" />
-    <title>Register - CI Shop</title>
+    <title>Update Profile - CIShop</title>
 
     <!-- Bootstrap core CSS -->
     <link
@@ -102,9 +102,22 @@
 
     <main role="main" class="container">
       <div class="row">
-        <div class="col-md-8 mx-auto">
+        <div class="col-md-3">
+          <div class="card mb-3">
+            <div class="card-header">Menu</div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <a href="/profile.html" class="">Profile</a>
+              </li>
+              <li class="list-group-item">
+                <a href="/orders.html" class="">Orders</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-9">
           <div class="card">
-            <div class="card-header">Login</div>
+            <div class="card-header">Formulir Profile</div>
             <div class="card-body">
               <form action="">
                 <div class="form-group">
@@ -144,13 +157,10 @@
                   >
                 </div>
                 <div class="form-group">
-                  <label for="">Konfirmasi Password</label>
-                  <input type="password" name="" id="" class="form-control" />
-                  <small class="form-text text-danger"
-                    >Konfirmasi password harus diisi</small
-                  >
+                  <label for="">Foto</label>
+                  <input type="file" name="photo" id="" class="form-control" />
                 </div>
-                <button type="submit" class="btn btn-primary">Register</button>
+                <button type="submit" class="btn btn-primary">Simpan</button>
               </form>
             </div>
           </div>
